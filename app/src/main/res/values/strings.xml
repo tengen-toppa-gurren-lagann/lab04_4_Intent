@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">lab03_2</string>
+    <string name="app_name">lab03_3</string>
     <string name="name_first">First Activity</string>
     <string name="name_second">Second Activity</string>
     <string name="name_third">Third Activity</string>
