@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lab03_2">
+    package="com.example.lab03_3">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab03_2">
         <activity
-            android:name=".ActivityAbout"
+            android:name="com.example.lab03_3.ActivityAbout"
             android:exported="false" />
         <activity
-            android:name=".Activity3"
+            android:name="com.example.lab03_3.Activity3"
             android:exported="false" />
         <activity
-            android:name=".Activity2"
+            android:name="com.example.lab03_3.Activity2"
             android:exported="false" />
         <activity
-            android:name=".Activity1"
+            android:name="com.example.lab03_3.Activity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
