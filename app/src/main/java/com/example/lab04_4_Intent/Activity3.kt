@@ -1,4 +1,4 @@
-package com.example.lab03_3
+package com.example.lab04_4_Intent
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,19 +11,22 @@ class Activity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_3)
 
-        val btnToActivity2 = findViewById<View>(R.id.btn2second)
+        val btnToActivity2 = findViewById<View>(R.id.bnToSecond)
         btnToActivity2.setOnClickListener { finish() }
 
-        val btnToActivity1 = findViewById<View>(R.id.btn2first)
+        val btnToActivity1 = findViewById<View>(R.id.bnToFirst)
         btnToActivity1.setOnClickListener {
-            val intent = Intent(applicationContext, Activity1::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
 
-        val navBottom : BottomNavigationView = findViewById<View>(R.id.nav_bottom) as BottomNavigationView
+        val navBottom : BottomNavigationView = findViewById<View>(R.id.nav_view) as BottomNavigationView
         navBottom.setOnNavigationItemReselectedListener {
             startActivity(Intent(applicationContext, ActivityAbout::class.java))
         }
+
+        //Включаем кнопку "Назад" (Navigation Up) в верхней строке приложения
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }

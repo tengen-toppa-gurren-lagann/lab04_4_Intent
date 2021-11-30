@@ -1,4 +1,4 @@
-package com.example.lab03_3
+package com.example.lab04_4_Intent
 
 import org.junit.Test
 
